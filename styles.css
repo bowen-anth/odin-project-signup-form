@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("Norse-Bold.otf");
+}
+
+/* After update:
+    
+    @font-face {
+    font-family: "CustomFont";
+    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+    } */
+
+body {
+  /* min-height: 100dvh; */
+  background-color: rgba(135, 133, 133, 0.1);
+}
+
+.main {
+  display: flex;
+  width: 100dvw;
+}
+
+.left {
+  background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  width: 36dvw;
+  object-fit: cover;
+  height: 100dvh;
+  background-size: 36dvw 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  /* position: relative; */
+}
+
+.odin-container {
+  text-align: center;
+  align-items: center;
+  margin: 14.5dvh auto;
+  /* border: 1px solid white; */
+  font-family: "Norse Bold", Arial, Helvetica, sans-serif;
+  font-size: 8rem;
+  width: 100%;
+  background-color: rgb(17, 11, 11, 0.6);
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center; */
+  /* position: relative; */
+  padding-top: 1rem;
+}
+
+.odin-logo {
+  width: 80px;
+}
+
+/* .left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left img {
+  object-fit: contain;
+} */
+
+/* .left {
+  display: flex;
+} */
+
+.main-container {
+  display: relative;
+}
+
+.photo-reference-p {
+  margin: -3rem;
+  text-align: center;
+  color: white;
+}
+
+.photo-reference-p a {
+  color: white;
+}
+
+.photo-reference-p a:focus,
+.photo-reference-p a:hover {
+  color: blueviolet;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  width: 600px;
+  padding: 2rem;
+}
+
+/* .section-one-wrapper,
+.section-three-wrapper {
+  background-color: rgba(135, 133, 133, 0.1);
+} */
+
+.section-one {
+  font-size: 1.6rem;
+  padding: 4rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+
+.section-two,
+.section-three {
+  padding-left: 4rem;
+}
+
+.section-two-wrapper {
+  background-color: white;
+  width: 64dvw;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: auto;
+}
+
+.section-two {
+  margin: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.section-two-heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+#form {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-basis: 48%;
+  flex-wrap: wrap;
+}
+
+/* #form label {
+  margin: 0.5rem;
+  width: 10rem;
+  display: inline-block;
+} */
+
+#form input {
+  width: 13rem;
+  border: 1px solid #e5e7eb;
+}
+
+.label-container {
+  /* border: 1px solid green; */
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* #password:focus,
+#confirm-password:focus {
+  outline: 1px solid red;
+} */
+
+.confirmed-password {
+  outline: 1px solid green !important;
+}
+
+.unconfirmed-password {
+  outline: 1px solid red !important;
+}
+.create-account-button {
+  border: none;
+  padding: 18px 45px;
+  background-color: #596d48;
+  color: white;
+  border-radius: 7px;
+  margin-top: 0rem;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.create-account-button:hover {
+  transform: scale(1.05);
+}
+
+.login {
+  color: #596d48;
+  text-decoration: none;
+}
+
+/* .section-three-wrapper {
+  border-top-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+} */
+
+.login:focus,
+.login:active,
+.login:hover {
+  color: blueviolet;
+}
+
+.fancy-line {
+  color: gray;
+  width: 64dvw;
+  border: 0;
+  height: 3px;
+  position: relative;
+  margin: 0.5em 0;
+}
+.fancy-line:before {
+  top: -0.5em;
+  height: 1em;
+}
+.fancy-line:after {
+  height: 0.5em;
+  top: calc(-0.5em + 1px);
+}
+
+.fancy-line:before,
+.fancy-line:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+
+.fancy-line,
+.fancy-line:before {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(135, 133, 133, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

@@ -7,6 +7,108 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Signup Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <div class="left">
+        <!-- <img
+          src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          width="100%"
+          height="auto"
+          alt=""
+          class="left-image"
+        /> -->
+        <div class="odin-container">
+          <img class="odin-logo" src="odin-lined.png" /><span class="odin-text"
+            >ODIN</span
+          >
+        </div>
+        <div class="photo-credit-container">
+          <p class="photo-reference-p">
+            Photo by
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+            <a href="https://unsplash.com">Unsplash</a>
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="section-one-wrapper">
+          <section class="section-one">
+            <p class="section-one-p">
+              This is not a real online service! You know you need something
+              like this in your life to help you realize your deepest dreams.
+              Sign up
+              <span class="italics">now</span> to get started.
+            </p>
+            <br />
+            <p class="section-one-p">
+              You <span class="italics">know</span> you want to.
+            </p>
+          </section>
+        </div>
+        <div class="section-two-wrapper">
+          <section class="section-two">
+            <h2 class="section-two-heading">Let's do this!</h2>
+            <form id="form">
+              <div class="label-container">
+                <label for="first-name" placeholder="John">FIRST NAME</label>
+                <input type="text" id="first-name" placeholder="John" />
+              </div>
+              <div class="label-container">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" placeholder="Doe" /><br />
+              </div>
+              <div class="label-container">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="john.doe@gmail.com"
+                /><br />
+              </div>
+              <div class="label-container">
+                <label for="phone-number">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phone-number"
+                  placeholder="555-555-5555"
+                />
+              </div>
+              <div class="label-container">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="6+ characters"
+                  min="6"
+                  onkeyup="check()"
+                />
+              </div>
+              <div class="label-container">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  min="6"
+                  onkeyup="check()"
+                />
+                <span id="message"></span>
+              </div>
+            </form>
+          </section>
+        </div>
+        <!-- <hr class="fancy-line" /> -->
+        <div class="section-three-wrapper">
+          <section class="section-three">
+            <button type="submit" for="form" class="create-account-button">
+              Create Account
+            </button>
+            <p class="have-account">
+              Already have an account? <a href="" class="login">Log in</a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
   <script src="app.js"></script>
 </html>
